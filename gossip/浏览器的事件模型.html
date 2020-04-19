@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>事件模型 | Akara的小站</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Fooly Cooly">
+    <link rel="preload" href="/blog/assets/css/0.styles.56c84531.css" as="style"><link rel="preload" href="/blog/assets/js/app.29dccf51.js" as="script"><link rel="preload" href="/blog/assets/js/2.520a2ada.js" as="script"><link rel="preload" href="/blog/assets/js/18.d118e946.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.58b64263.js"><link rel="prefetch" href="/blog/assets/js/11.10a33904.js"><link rel="prefetch" href="/blog/assets/js/12.2c37f9c1.js"><link rel="prefetch" href="/blog/assets/js/13.c470e782.js"><link rel="prefetch" href="/blog/assets/js/14.8e543c9c.js"><link rel="prefetch" href="/blog/assets/js/15.f6582474.js"><link rel="prefetch" href="/blog/assets/js/16.722ad689.js"><link rel="prefetch" href="/blog/assets/js/17.2800d77c.js"><link rel="prefetch" href="/blog/assets/js/19.22b53b9e.js"><link rel="prefetch" href="/blog/assets/js/20.80fa8e00.js"><link rel="prefetch" href="/blog/assets/js/21.18bedc4c.js"><link rel="prefetch" href="/blog/assets/js/22.fa5c56c1.js"><link rel="prefetch" href="/blog/assets/js/23.52560cf1.js"><link rel="prefetch" href="/blog/assets/js/24.df575e54.js"><link rel="prefetch" href="/blog/assets/js/3.5f42b7f9.js"><link rel="prefetch" href="/blog/assets/js/4.53d39318.js"><link rel="prefetch" href="/blog/assets/js/5.37333464.js"><link rel="prefetch" href="/blog/assets/js/6.611ffb08.js"><link rel="prefetch" href="/blog/assets/js/7.86c8e340.js"><link rel="prefetch" href="/blog/assets/js/8.4dd2552c.js"><link rel="prefetch" href="/blog/assets/js/9.07ee1e2a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.56c84531.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Akara的小站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/frontend/" class="nav-link">
+  前端笔记
+</a></div><div class="nav-item"><a href="/blog/mianshi/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/blog/gossip/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  杂文
+</a></div><div class="nav-item"><a href="https://messiahhh.github.io/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/messiahhh/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/frontend/" class="nav-link">
+  前端笔记
+</a></div><div class="nav-item"><a href="/blog/mianshi/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/blog/gossip/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  杂文
+</a></div><div class="nav-item"><a href="https://messiahhh.github.io/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/messiahhh/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/gossip/ES6基础.html" class="sidebar-link">ES6基础</a></li><li><a href="/blog/gossip/Generator.html" class="sidebar-link">Generator</a></li><li><a href="/blog/gossip/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/blog/gossip/" class="sidebar-link">联系我</a></li><li><a href="/blog/gossip/SASS.html" class="sidebar-link">SASS</a></li><li><a href="/blog/gossip/TypeScript.html" class="sidebar-link">TypeScript摘录</a></li><li><a href="/blog/gossip/如何搭建Ghost博客.html" class="sidebar-link">用Ghost搭建你的博客</a></li><li><a href="/blog/gossip/异步的写法.html" class="sidebar-link">异步的写法</a></li><li><a href="/blog/gossip/拷贝.html" class="sidebar-link">拷贝</a></li><li><a href="/blog/gossip/文件上传.html" class="sidebar-link">文件上传</a></li><li><a href="/blog/gossip/浅谈密码学.html" class="sidebar-link">浅谈密码学</a></li><li><a href="/blog/gossip/浏览器的事件模型.html" class="active sidebar-link">事件模型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/gossip/浏览器的事件模型.html#事件模型" class="sidebar-link">事件模型</a></li></ul></li><li><a href="/blog/gossip/编码与字符集.html" class="sidebar-link">Unicode字符集和编码</a></li><li><a href="/blog/gossip/聊聊像素.html" class="sidebar-link">聊聊像素</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="事件模型"><a href="#事件模型" class="header-anchor">#</a> 事件模型</h2> <blockquote><p>本文为初学前端时所写，未进行勘误便移植了过来，若有错误请见谅。</p></blockquote> <p>在讲解事件知识点之前，我想先举个例子，读者可以想想怎么优雅的实现这个功能。</p> <p>我们经常会有这样的需求：浏览器内部有个弹窗元素，当你点击弹窗外部的元素时，这个弹窗消失。但当你点击这个弹窗本身时，不会有任何影响。</p> <p>虽然听起来很简单，但如果不能理解事件模型的话，还是会感到很头疼的。</p> <p>因为当你点击弹窗的时候，实际上也等于点击了外部的元素。</p> <p>而如果只是给外部元素绑定事件来使内部元素消失， 那当你点击内部弹窗的时候，依然会触发外部元素的事件。</p> <h3 id="事件传播"><a href="#事件传播" class="header-anchor">#</a> 事件传播</h3> <p>我们知道，网页是由一层一层的HTML代码组成。就像同心圆一般，当我们点击内部的同心圆时，实际上也是点击了外部的同心圆。</p> <p>那么，浏览器具体是如何表现的呢？</p> <p>这里假设我们的HTML代码结构如下</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div class=&quot;outer&quot;&gt;
+        &lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre></div><p>当我们点击inner元素的时候，其实可以看成两个部分。</p> <p>步骤①：依次点击window -&gt; document -&gt; body -&gt; outer -&gt; inner 。这个过程从外往里，所以叫做事件捕获。</p> <p>步骤②：依次点击inner -&gt; outer -&gt; body -&gt; document -&gt; window。这个过程从里往外，所以叫做事件冒泡。</p> <p>因此， 从外到内，再从内到外，每个元素相当于点击了两次。</p> <p>而同一个元素进行的两次点击也是不同的，本质区别就是这个点击事件的标志（FLAG）不同。</p> <p>这里的标志指的就是捕获和冒泡。</p> <p>总结而言，一个事件附加一个标志（FLAG），这个标志可以是捕获，或者是冒泡。</p> <h3 id="addeventlistener-type-listener-usecapture"><a href="#addeventlistener-type-listener-usecapture" class="header-anchor">#</a> addEventListener(type, listener[, useCapture])</h3> <ul><li><code>type</code>：事件名称，大小写敏感。</li> <li><code>listener</code>：监听函数。事件发生时，会调用该监听函数。</li> <li><code>useCapture</code>：布尔值。默认值为false</li></ul> <p>这个属性大家都很熟悉， 唯一可能不熟悉的就是第三个参数了， 毕竟大多数情况下可以省略（也就是使用默认值false）。那么这第三个参数（useCapture）具体是干什么的呢？</p> <p>我们开始说了，任何事件都会有个标志，捕获或是冒泡。</p> <p>那么，当我们给元素监听事件的时候，除了判断事件的种类（鼠标事件，键盘事件），也会判断事件本身的标志（FLAG）。</p> <p>而当参数useCapture设置为true的时候， 表明必须要是具有捕获标志的事件才能触发监听函数。</p> <p>而默认值是false， 也就是当事件的标志是冒泡才能触发监听函数。</p> <h3 id="e-stoppropagation"><a href="#e-stoppropagation" class="header-anchor">#</a> e.stopPropagation()</h3> <p>事件的传播顺序是先捕获再冒泡。而stopPropagation函数的作用是停止事件的传播。</p> <p>这是个很强大的方法。我们可以根据这个方法实现最初的需求</p> <div class="language- extra-class"><pre class="language-text"><code>let inner = document.querySelector('.inner')
+let outer = document.querySelector('.outer')
+
+inner.addEventListener('click', function (e) {
+    e.stopPropagation()
+}, true)
+
+outer.addEventListener('click', function (e) {
+    inner.style.display = 'none'
+}, false)
+</code></pre></div><p>解释一下</p> <p>当我们点击inner元素的时候，其实是这样的。</p> <p>①点击outer(捕获) -&gt; ②点击inner(捕获) -&gt; ③点击inner(冒泡) -&gt; ④点击outer(冒泡)</p> <p>那么我们只要把outer上监听的函数设置为冒泡（也就是useCapture: false）。</p> <p>然后通过e.stopPropagation()函数来使点击inner元素的时候，事件不传播到第四步就行了。</p> <h3 id="el-dispatchevent"><a href="#el-dispatchevent" class="header-anchor">#</a> el.dispatchEvent()</h3> <p>用来直接触发事件</p> <div class="language- extra-class"><pre class="language-text"><code>let e = new Event('click')
+inner.dispatchEvent(e)
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/messiahhh/blog/edit/master/docs/gossip/浏览器的事件模型.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新时间:</span> <span class="time">4/19/2020, 9:22:39 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/gossip/浅谈密码学.html" class="prev">
+        浅谈密码学
+      </a></span> <span class="next"><a href="/blog/gossip/编码与字符集.html">
+        Unicode字符集和编码
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.29dccf51.js" defer></script><script src="/blog/assets/js/2.520a2ada.js" defer></script><script src="/blog/assets/js/18.d118e946.js" defer></script>
+  </body>
+</html>

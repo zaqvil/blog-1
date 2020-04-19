@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件上传 | Akara的小站</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Fooly Cooly">
+    <link rel="preload" href="/blog/assets/css/0.styles.56c84531.css" as="style"><link rel="preload" href="/blog/assets/js/app.29dccf51.js" as="script"><link rel="preload" href="/blog/assets/js/2.520a2ada.js" as="script"><link rel="preload" href="/blog/assets/js/16.722ad689.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.58b64263.js"><link rel="prefetch" href="/blog/assets/js/11.10a33904.js"><link rel="prefetch" href="/blog/assets/js/12.2c37f9c1.js"><link rel="prefetch" href="/blog/assets/js/13.c470e782.js"><link rel="prefetch" href="/blog/assets/js/14.8e543c9c.js"><link rel="prefetch" href="/blog/assets/js/15.f6582474.js"><link rel="prefetch" href="/blog/assets/js/17.2800d77c.js"><link rel="prefetch" href="/blog/assets/js/18.d118e946.js"><link rel="prefetch" href="/blog/assets/js/19.22b53b9e.js"><link rel="prefetch" href="/blog/assets/js/20.80fa8e00.js"><link rel="prefetch" href="/blog/assets/js/21.18bedc4c.js"><link rel="prefetch" href="/blog/assets/js/22.fa5c56c1.js"><link rel="prefetch" href="/blog/assets/js/23.52560cf1.js"><link rel="prefetch" href="/blog/assets/js/24.df575e54.js"><link rel="prefetch" href="/blog/assets/js/3.5f42b7f9.js"><link rel="prefetch" href="/blog/assets/js/4.53d39318.js"><link rel="prefetch" href="/blog/assets/js/5.37333464.js"><link rel="prefetch" href="/blog/assets/js/6.611ffb08.js"><link rel="prefetch" href="/blog/assets/js/7.86c8e340.js"><link rel="prefetch" href="/blog/assets/js/8.4dd2552c.js"><link rel="prefetch" href="/blog/assets/js/9.07ee1e2a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.56c84531.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Akara的小站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/frontend/" class="nav-link">
+  前端笔记
+</a></div><div class="nav-item"><a href="/blog/mianshi/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/blog/gossip/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  杂文
+</a></div><div class="nav-item"><a href="https://messiahhh.github.io/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/messiahhh/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/frontend/" class="nav-link">
+  前端笔记
+</a></div><div class="nav-item"><a href="/blog/mianshi/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/blog/gossip/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  杂文
+</a></div><div class="nav-item"><a href="https://messiahhh.github.io/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简历
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/messiahhh/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/gossip/ES6基础.html" class="sidebar-link">ES6基础</a></li><li><a href="/blog/gossip/Generator.html" class="sidebar-link">Generator</a></li><li><a href="/blog/gossip/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/blog/gossip/" class="sidebar-link">联系我</a></li><li><a href="/blog/gossip/SASS.html" class="sidebar-link">SASS</a></li><li><a href="/blog/gossip/TypeScript.html" class="sidebar-link">TypeScript摘录</a></li><li><a href="/blog/gossip/如何搭建Ghost博客.html" class="sidebar-link">用Ghost搭建你的博客</a></li><li><a href="/blog/gossip/异步的写法.html" class="sidebar-link">异步的写法</a></li><li><a href="/blog/gossip/拷贝.html" class="sidebar-link">拷贝</a></li><li><a href="/blog/gossip/文件上传.html" class="active sidebar-link">文件上传</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/gossip/文件上传.html#文件上传" class="sidebar-link">文件上传</a></li></ul></li><li><a href="/blog/gossip/浅谈密码学.html" class="sidebar-link">浅谈密码学</a></li><li><a href="/blog/gossip/浏览器的事件模型.html" class="sidebar-link">事件模型</a></li><li><a href="/blog/gossip/编码与字符集.html" class="sidebar-link">Unicode字符集和编码</a></li><li><a href="/blog/gossip/聊聊像素.html" class="sidebar-link">聊聊像素</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="文件上传"><a href="#文件上传" class="header-anchor">#</a> 文件上传</h2> <blockquote><p>本文为初学前端时所写，未进行勘误便移植了过来，若有错误请见谅。</p></blockquote> <p>文件上传应该算前端里比较重要的知识点，用的多，也涉及了许多HTML5里的知识点。</p> <p>本文简单讲解</p> <ul><li>File</li> <li>Blob</li> <li>FileReader
+<ul><li>readAsText</li> <li>readAsArrayBuffer</li> <li>readAsDataURL</li> <li>readAsBinaryString</li></ul></li> <li>FormData</li></ul> <h3 id="file-api"><a href="#file-api" class="header-anchor">#</a> File API</h3> <p>什么时候会经常用到File API？</p> <ol><li><div class="language- extra-class"><pre class="language-text"><code>&lt;input type='file'&gt;
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>el.ondrop = function (e) {
+    e.preventDefault()
+    console.log(e.dataTransfer.files)
+}
+</code></pre></div></li></ol> <p>File的格式是什么样的？</p> <div class="language- extra-class"><pre class="language-text"><code>File {
+	lastModified,
+	lastModifiedDate,
+	name: 'xxx',
+	size: 'xxx,
+	type: 'xxx'
+	webkitRelativePath: 'xxx',
+	__proto__: File
+}
+</code></pre></div><p>而File又是继承于Blob的。</p> <h3 id="blob-api"><a href="#blob-api" class="header-anchor">#</a> Blob API</h3> <p>Blob是什么？</p> <blockquote><p>Blob（Binary Large Object）对象代表了一段二进制数据，提供了一系列操作接口。其他操作二进制数据的API（比如File对象），都是建立在Blob对象基础上的，继承了它的属性和方法。</p></blockquote> <p>如何生成Blob对象？</p> <ol><li><blockquote><p>Blob构造函数，第一个参数是一个包含实际数据的数组，第二个参数是数据的类型，这两个参数都不是必需的。</p></blockquote></li></ol> <div class="language- extra-class"><pre class="language-text"><code>let blob = new Blob(['hello'])
+console.log(blob)
+Blob(5) {
+    size: 5,
+    type: '',
+    __proto__: Blob,
+}
+</code></pre></div><ol start="2"><li><blockquote><p>Blob对象的slice方法，将二进制数据按照字节分块，返回一个新的Blob对象。</p></blockquote></li></ol> <div class="language- extra-class"><pre class="language-text"><code>let newBlob = oldBlob.slice(startingByte, endindByte)
+</code></pre></div><p>因此可以实现分片上传，还能进行上传进度的监控</p> <h3 id="filereader-api"><a href="#filereader-api" class="header-anchor">#</a> FileReader API</h3> <blockquote><p>FileReader API用于读取文件，即把文件内容读入内存。它的参数是<code>File</code>对象或<code>Blob</code>对象。</p> <p>对于不同类型的文件，FileReader提供不同的方法读取文件。</p></blockquote> <p>那么如何使用FileReader呢？</p> <div class="language- extra-class"><pre class="language-text"><code>let reader = new FileReader()
+reader.onload = function () {
+
+}
+reader.readAsDataURL()
+</code></pre></div><p>当然，这里的reader.readAsDataURL是可以替换的。</p> <ul><li>readAsText  二进制对应的文本编码，默认是utf8编码</li> <li>readAsArrayBuffer 二进制数组，用起来和Blob很像</li> <li>readAsDataURL 二进制数据的base64编码，可以用来做预览图</li> <li>readAsBinaryString 返回二进制字符串，笔者不太懂</li></ul> <h3 id="formdata-api"><a href="#formdata-api" class="header-anchor">#</a> FormData API</h3> <p>我们用POST请求发送数据时候，可以直接把想发送的数据传递给xhr.send函数，也可以用FormData序列化后再发送。</p> <p>如何使用</p> <div class="language- extra-class"><pre class="language-text"><code>let fd = new FormData()
+fd.append('img', file) // file是想发送的数据，可以是文本，也可以是二进制数据
+xhr.send(fd)
+</code></pre></div><p>使用FormData的时候，请求头会自动加上相对应的Content-Type，因此你不应该再自己手动加了。</p> <p>观察Network可以发现， 请求实体的数据由boundary分割开，而boundary是在Content-Type里设定的。</p> <h3 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h3> <p><a href="http://javascript.ruanyifeng.com/htmlapi/file.html" target="_blank" rel="noopener noreferrer">阮一峰：文件与二进制数据的操作<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>还是阮老师写的好哈哈哈，本文就随便记录一下（我知道没人看</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/messiahhh/blog/edit/master/docs/gossip/文件上传.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新时间:</span> <span class="time">2/24/2020, 2:23:16 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/gossip/拷贝.html" class="prev">
+        拷贝
+      </a></span> <span class="next"><a href="/blog/gossip/浅谈密码学.html">
+        浅谈密码学
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.29dccf51.js" defer></script><script src="/blog/assets/js/2.520a2ada.js" defer></script><script src="/blog/assets/js/16.722ad689.js" defer></script>
+  </body>
+</html>
